@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>확장된 테두리 스타일 예제</title>
+    <style>
+        body{
+            background-color: #FAED7d;
+            font-family: 'Nanum Gothic', sans-serif;
+            padding: 20px;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 70px;
+            height: 70px;
+            margin: 5px;
+            background-color: white;
+            color: black;
+            font-size: 12px;
+        }
+        .none{ border: 2px none black;}
+        .solid{ border: 2px solid black;}
+        .dotted{ border: 2px dotted black;}
+        .double { border: 4px double black;}
+
+        .combo{
+            border-top:1px solid #0088dd;
+            border-bottom: 1px solid #0088dd;
+        }
+        .rounded{
+            border: 1px solid #0088dd;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        img{
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        p img{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h2>테두리 스타일 모음</h2>
+    <div class="contatiner">
+        <div class="box none">none</div>
+        <div class="box solid">solid</div>
+        <div class="box dotted">dotted</div>
+        <div class="box dashed">dashed</div>
+        <div class="box double">double</div>
+        <div class="box combo">combo</div>
+        <div class="box rounded">round</div>
+    </div>
+    <img src="../../htmlexample/image/black.JPG" width="400" height="300"/>
+    <img src="../../htmlexample/image/havi.JPG" width="400" height="300"/>
+    <img src="../../htmlexample/image/maru.JPG" width="400" height="300"/>
+    <p>
+        <img src="../../htmlexample/image/mouse.png" width="400" height="300"/>
+    </p>
+</body>
+</html>

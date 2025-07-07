@@ -1,0 +1,13 @@
+body{
+    background: white url('../image/tulip.gif') no-repeat fixed right center;
+    color: #665544;
+    padding: 10px;
+}
+
+div p span{
+    font-weight: bold;
+}
+
+.a{
+    font-style: italic;
+}
