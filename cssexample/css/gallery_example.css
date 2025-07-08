@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    background-color: black;
+}
+
+body{
+    width: 900px;
+    text-align: center;
+}
+img {
+    border-radius: 8px;
+    width: 200px;
+    height: 150px;
+    margin: 10px 10px;
+}
+
+div{
+    margin: 10px auto;
+    box-sizing: 500px;
+    height: 220px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+section{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+figcaption{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
+
+h3{
+    color: white;
+    font-style: italic
+}
