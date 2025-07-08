@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    background-color: black;
+    background-color: rgb(26, 24, 24);
 }
 
 body{
@@ -34,9 +34,14 @@ figcaption{
     font-weight: bold;
     color: black;
     background-color: white;
+    font-size: large;
 }
 
-h3{
+h2{
     color: white;
     font-style: italic
+}
+
+a{
+    text-decoration: none;
 }

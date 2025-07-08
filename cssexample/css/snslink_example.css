@@ -32,3 +32,8 @@ h3 {
     margin: 20px auto;
     border-radius: 30px;
 }
+a{
+    text-decoration: none;
+    color: white;
+    background-color: #ff9a9e;
+}
