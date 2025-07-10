@@ -112,11 +112,8 @@ function fnChange() {
     inputNum2.value = temp;
 }
 
-document.getElementById("btn").onclick = function(){
-    document.getElementById("namePrint").innerHTML = document.getElementById("name").value;
-    const a = document.getElementById("namePrint");
-    a.style.backgroundColor = "darkgray";
-    a.style.width = "auto";
-    a.style.boxSizing = "200px"
+document.getElementById("btn").onclick = function () {
+    const nameValue = document.getElementById("name").value;
+    document.getElementById("namePrint").innerHTML = nameValue ? `${nameValue}님 반갑습니다~.` : "이름을 입력해주세요.";
 }
 

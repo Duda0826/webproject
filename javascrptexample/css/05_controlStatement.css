@@ -1,0 +1,11 @@
+img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    margin: 5px 5px;
+}
+
+.asd{
+    display: flex;
+    flex-wrap: wrap;
+}
