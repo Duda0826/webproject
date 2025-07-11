@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QX 회원가입</title>
+    <link rel="stylesheet" href="/css/test.css">
+</head>
+<body>
+    
+   <header>
+    <div ><a class="logo" href="/html/qxgymhome.html">🏋️‍♀️ QX GYM</a></div>
+    <nav>
+      <ul>
+        <li>홈</li>
+        <li>프로그램</li>
+        <li id="signup" ><a class="tool" href="/html/tool/signup.html">회원가입</a></li>
+        <li id="login"><a class="tool" href="/html/tool/login.html">로그인</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <fieldset>
+ 
+        <legend>회원가입 동의서</legend>
+
+        <form method="get">
+        <label>이용약간 동의(필수)</label><br>
+        <textarea cols="50" rows="8" sytle="resize:resize">
+        </textarea>
+    <br>
+    <input type="radio" name="agree1" id="a1"> 
+    <label for="a1">동의합니다</label>
+    <input type="radio" name="agree1" id="a2">
+    <lable for="a2">동의하지않습니다.</lable>
+    <br>
+    <br>
+
+
+    <label>개인정보 수집 및 이용동의(필수)</label><br>
+    <textarea cols="50" rows="8" sytle="resize:resize">
+    </textarea>
+    <br>
+
+    <input type="radio" name="agree2" id="a3"> 
+    <label for="a3">동의합니다</label>
+    <input type="radio" name="agree2" id="a4">
+    <lable for="a4">동의하지않습니다.</lable>
+    <!-- name속성을 다른 그룹으로 해야함 -->
+    <br>
+    <br>
+    <input type="checkbox" id="agree">
+    <label for="agree">모두 동의합니다</label>
+
+    <br><br>
+    <button type="reset">취소</button>
+    <button type="submit">확인</button>
+        </form>
+    </fieldset>
+</body>
+</html>

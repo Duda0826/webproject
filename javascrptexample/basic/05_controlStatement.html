@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/javascrptexample/css/05_controlStatement.css">
     <title>Document</title>
 </head>
+
 <body>
     <section>
-    <h2>성적 구하기</h2>
-    <div>
-    <input type="text" id="kor" placeholder="국어점수(kor)">
-    <input type="text" id="eng" placeholder="영어점수(eng)">
-    <input type="text" id="math" placeholder="수학점수(math)">
-    <button type="button" id="btn" onclick="btn()">성적 구하기</button>
-    </div>
-    <div>
-        <input type="text" id="sum" placeholder="합계">
-        <input type="text" id="avg" placeholder="평균">
-        <input type="text" id="grade" placeholder="학점">
-    </div>
+        <h2>성적 구하기</h2>
+        <div>
+            <input type="text" id="kor" placeholder="국어점수(kor)">
+            <input type="text" id="eng" placeholder="영어점수(eng)">
+            <input type="text" id="math" placeholder="수학점수(math)">
+            <button type="button" id="btn" onclick="btn()">성적 구하기</button>
+        </div>
+        <div>
+            <input type="text" id="sum" placeholder="합계">
+            <input type="text" id="avg" placeholder="평균">
+            <input type="text" id="grade" placeholder="학점">
+        </div>
     </section>
 
     <section>
-        <h2>숫자 맞추기 게임</h2>
         <div>
-            <p>이 게임은 컴퓨터가 무작위로 생성한 숫자를 맞추는 게임입니다. 숮나는 1부터 10 사이의 정수입니다.</p>
-            <p></p>
+            <h3>숫자 맞추기 게임</h3>
+            <code>[참고] 1~10 사이의 난수 생성: Math.floor(Math.random() * 10) + 1;</code>
+            <p>
+                이 게임은 컴퓨터가 무작위로 생성한 숫자를 맞추는 게임입니다.
+                숫자는 1부터 10 사이의 정수입니다.
+            </p>
+            <form>
+                <div class="number">
+                    <label>숫자:</label>
+                    <input type="text" id="user" name="user" />
+                    <input type="button" value="확인" onclick="guess()" />
+                </div>
+                <div>
+                    <label>추측횟수:</label>
+                    <input type="text" id="guesses" name="guesses" readonly="readonly" />
+                    <label>힌트:</label>
+                    <input type="text" id="result" name="result" readonly="readonly" />
+                </div>
+            </form>
         </div>
     </section>
 
@@ -40,7 +58,15 @@
             <div id="rere" class="asd"></div>
         </div>
     </section>
-    
+
+    <section>
+        <div>
+            <h3>구구단 출력</h3>
+            <button type="button" onclick="gugudanPrint()">출력</button>
+            <div id="gugudan"></div>
+        </div>
+    </section>
     <script src="/javascrptexample/js/05_controlStatement.js"></script>
 </body>
+
 </html>
