@@ -111,4 +111,4 @@ document.getElementById("goNaver").addEventListener("click", function(e){
     //                          (이벤트와 관련된 정보가 담겨있는 객체)
     e.preventDefault(); //HTML 요소가 가지고 있는 기본 이벤트를 제거
     alert("네이버 이동이 되지 않습니다")
-})
+});

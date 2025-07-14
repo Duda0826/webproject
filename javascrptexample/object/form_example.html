@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>form 예제1</h3>
+    <form> <!-- from → form 으로 수정 -->
+        <input type="text" name="box1" id="inbox1" />
+        <div id="returnBox" style="margin-top: 20px; width: 300px;"></div>
+        <input type="text" name="box2" id="inbox2" style="height: 100px; width: 170px;" />
+    </form>
+
+
+    <h3>form 예제2</h3>
+
+    <form name="formEx" id="form1">
+        <label>너비(width): </label>
+        <input type="text" name="widthInput" id="widthId">
+        <label>높이(height):</label>
+        <input type="text" name="heightInput" id="heightId">
+        <label>배경색</label>
+        <input type="color" name="colorChoice" id="colorId">
+        <div>
+            <label>출력할 문자열</label>
+            <input type="text" name="textInput" id="textId" style="width: 250px;">
+        </div>
+        <button type="button" id="btn1">출력</button>
+        <div id="test">
+
+        </div>
+    </form>
+
+    <script src="/javascrptexample/js/form_example.js"></script>
+</body>
+
+</html>
